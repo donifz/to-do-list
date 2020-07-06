@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form class="input-form" action="index.html">
+        <input
+          class="task-input"
+          placeholder="Ваша задача"
+          required
+          type="text"
+        />
+        <input class="btn submit-btn" type="submit" value="Добавить" />
+      </form>
+      <ul class="to-do">
+        <li class="toDo__list">
+          <h3 class="title">Задача</h3>
+          <p class="toDo__text">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+            sed corrupti vitae consequatur, ut officiis hic ratione beatae porro
+            tempore ad minima! Quisquam incidunt, voluptatem deleniti sint
+            provident unde! Pariatur!
+          </p>
+          <button class="btn btn-delete">Удалить задачу</button>
+        </li>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
