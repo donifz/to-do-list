@@ -70,3 +70,30 @@ form {
 .submit-btn {
   margin-left: 10px
 }
+
+.toDo__text {
+  position: relative;
+}
+
+.toDo__text::after {
+  position: absolute;
+  content: "Изменить";
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #0597F2;
+  padding: 7px;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  font-size: 13px;
+  position: absolute;
+  top: -48px;
+  right: 130px;
+  opacity: 0;
+}
+
+.toDo__text:hover::after {
+  opacity: 1;
+  transition: 0.2s;
+}

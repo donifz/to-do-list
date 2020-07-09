@@ -33,6 +33,22 @@ let deletTask = function (task) {
   });
 };
 
+let editTask = function (task) {
+  task.addEventListener("click", function (evt) {
+    let target = evt.target;
+
+    if (target.tagName == "P") {
+      let change = prompt("введите чтобы изменить задачу");
+
+      if (change == "" || change == null) {
+        target.textContent = target.textContent;
+      } else {
+        target.textContent = change;
+      }
+    }
+  });
+};
+
 let submitFunc = function (task) {
   submit.addEventListener("click", function (evt) {
     evt.preventDefault();
@@ -52,4 +68,5 @@ let submitFunc = function (task) {
 for (let i = 0; i < list.length; i++) {
   submitFunc(toDo[i]);
   deletTask(toDo[i]);
+  editTask(toDo[i]);
 }
